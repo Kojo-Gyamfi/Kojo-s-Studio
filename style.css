@@ -480,9 +480,9 @@ section {
   color: var(--text-muted);
 }
 
-/* .project-summary {
+.project-summary {
   margin-bottom: 1.5rem;
-} */
+}
 
 .project-tags {
   display: flex;

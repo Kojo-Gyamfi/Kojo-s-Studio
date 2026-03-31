@@ -15,23 +15,23 @@
   <rect width="800" height="500" rx="28" fill="url(#bg)"/>
   <circle cx="642" cy="112" r="84" fill="#0EA5E9" fill-opacity="0.22" filter="url(#glow)"/>
   <circle cx="152" cy="392" r="108" fill="#10B981" fill-opacity="0.14" filter="url(#glow)"/>
-  <rect x="90" y="80" width="620" height="340" rx="28" fill="rgba(7,14,24,0.76)" stroke="rgba(255,255,255,0.10)" stroke-width="2"/>
-  <rect x="120" y="110" width="180" height="280" rx="22" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
-  <rect x="324" y="110" width="356" height="120" rx="22" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
-  <rect x="324" y="250" width="172" height="140" rx="22" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
-  <rect x="508" y="250" width="172" height="140" rx="22" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="90" y="80" width="620" height="340" rx="28" fill="#070E18" fill-opacity="0.76" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
+  <rect x="120" y="110" width="180" height="280" rx="22" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="324" y="110" width="356" height="120" rx="22" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="324" y="250" width="172" height="140" rx="22" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="508" y="250" width="172" height="140" rx="22" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.08"/>
   <rect x="146" y="142" width="126" height="96" rx="22" fill="url(#city)"/>
   <path d="M168 218V183L208 154L248 183V218" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   <rect x="184" y="196" width="24" height="22" rx="6" fill="#F8FAFC"/>
-  <rect x="354" y="140" width="144" height="18" rx="9" fill="rgba(255,255,255,0.14)"/>
-  <rect x="354" y="170" width="286" height="12" rx="6" fill="rgba(255,255,255,0.10)"/>
+  <rect x="354" y="140" width="144" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.14"/>
+  <rect x="354" y="170" width="286" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.10"/>
   <path d="M354 204C390 182 425 201 458 174C487 151 533 156 570 136C595 123 615 126 646 144" stroke="url(#city)" stroke-width="8" stroke-linecap="round"/>
   <circle cx="458" cy="174" r="10" fill="#7DD3FC"/>
   <circle cx="570" cy="136" r="10" fill="#6EE7B7"/>
   <rect x="350" y="278" width="118" height="84" rx="18" fill="url(#city)"/>
-  <rect x="535" y="278" width="118" height="18" rx="9" fill="rgba(255,255,255,0.14)"/>
-  <rect x="535" y="308" width="96" height="18" rx="9" fill="rgba(255,255,255,0.10)"/>
-  <rect x="535" y="338" width="72" height="18" rx="9" fill="rgba(255,255,255,0.08)"/>
+  <rect x="535" y="278" width="118" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.14"/>
+  <rect x="535" y="308" width="96" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.10"/>
+  <rect x="535" y="338" width="72" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.08"/>
   <text x="120" y="60" fill="#E0F2FE" font-size="26" font-family="Outfit, Arial, sans-serif" font-weight="700">Real Estate Dashboard</text>
   <text x="120" y="455" fill="#67E8F9" font-size="18" font-family="Outfit, Arial, sans-serif" letter-spacing="2">ANALYTICS • MANAGEMENT • VISUALIZATION</text>
 </svg>
