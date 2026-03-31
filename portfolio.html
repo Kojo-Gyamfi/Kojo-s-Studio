@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kojo's Studio | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Kojo's <span class="text-gradient">Studio</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active-link">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="btn btn-primary nav-btn-hire">Hire Me</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+    </nav>
+
+    <main>
+        <section>
+            <h1 class="section-title fade-up">My <span class="text-gradient">Portfolio</span></h1>
+            
+            <div class="filters fade-up delay-100">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="web">Engineering</button>
+                <button class="filter-btn" data-filter="design">UI/UX & Brand</button>
+            </div>
+
+            <div class="grid fade-up delay-200">
+                <!-- Project 1 -->
+                <div class="card hover-card portfolio-item" data-category="web">
+                    <div class="placeholder-img">
+                        <img src="Images/nexus-ecommerce.svg" alt="Concept artwork for the Nexus E-Commerce web platform" loading="lazy">
+                    </div>
+                    <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-primary); letter-spacing: 1px; font-weight: 700;">Web Platform</span>
+                    <h3 style="margin-top: 0.5rem;">Nexus E-Commerce</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">A fully functional online store with modern UI, built using cutting-edge vanilla JS and CSS3 animations.</p>
+
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card hover-card portfolio-item" data-category="design">
+                    <div class="placeholder-img">
+                        <img src="Images/cafe-moca-brand.svg" alt="Brand identity artwork for the Cafe Moca rebrand project" loading="lazy">
+                    </div>
+                    <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-secondary); letter-spacing: 1px; font-weight: 700;">Brand Identity</span>
+                    <h3 style="margin-top: 0.5rem;">Cafe Moca Rebrand</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Complete visual system overhaul, including logotype, typography guidelines, and packaging concepts.</p>
+
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card hover-card portfolio-item" data-category="web">
+                    <div class="placeholder-img">
+                        <img src="Images/fintech-conversion.svg" alt="Landing page concept for the fintech conversion project" loading="lazy">
+                    </div>
+                    <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-primary); letter-spacing: 1px; font-weight: 700;">Landing Page</span>
+                    <h3 style="margin-top: 0.5rem;">Fintech Conversion Page</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">High-converting responsive landing page engineered to maximize user acquisition for a Web3 startup.</p>
+
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card hover-card portfolio-item" data-category="design">
+                    <div class="placeholder-img">
+                        <img src="Images/social-media-toolkit.svg" alt="Marketing artwork for the social media toolkit project" loading="lazy">
+                    </div>
+                    <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-secondary); letter-spacing: 1px; font-weight: 700;">Digital Marketing</span>
+                    <h3 style="margin-top: 0.5rem;">Social Media Toolkit</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Dynamic layout systems and templates for X, Instagram, and LinkedIn marketing campaigns.</p>
+
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card hover-card portfolio-item" data-category="web">
+                    <div class="placeholder-img">
+                        <img src="Images/real-estate-dashboard.svg" alt="Dashboard interface concept for the real estate analytics project" loading="lazy">
+                    </div>
+                    <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-primary); letter-spacing: 1px; font-weight: 700;">Web Application</span>
+                    <h3 style="margin-top: 0.5rem;">Real Estate Dashboard</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Comprehensive dashboard interface designed for deep analytics, property management, and data visualization.</p>
+
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card hover-card portfolio-item" data-category="design">
+                    <div class="placeholder-img">
+                        <img src="Images/devcon-poster-set.svg" alt="Poster series artwork for the DevCon 2026 print design project" loading="lazy">
+                    </div>
+                    <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-secondary); letter-spacing: 1px; font-weight: 700;">Print Design</span>
+                    <h3 style="margin-top: 0.5rem;">DevCon 2026 Poster Set</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Bold, typography-driven poster series created for an international developer convention.</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kojo's Studio. Designed with passion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
