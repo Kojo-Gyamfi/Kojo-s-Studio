@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kojo's Studio | Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo">Kojo's <span class="text-gradient">Studio</span></a>
@@ -17,44 +19,38 @@
             <li><a href="contact.html" class="active-link">Contact</a></li>
             <li><a href="contact.html" class="btn btn-primary nav-btn-hire">Hire Me</a></li>
         </ul>
-        <button class="hamburger" aria-label="Toggle Navigation">☰</button>
+        <button class="hamburger" aria-label="Toggle Navigation" aria-expanded="false">&#9776;</button>
     </nav>
 
     <main>
         <section>
             <h1 class="section-title fade-up">Initiate <span class="text-gradient">Contact</span></h1>
-            <p class="text-center fade-up delay-100" style="max-width: 650px; margin: 0 auto 4rem; color: var(--text-muted); font-size: 1.1rem;">
-                Looking to build something groundbreaking? Fill out the consultation request below, and I'll connect with you within 24 hours.
-            </p>
+            <p class="section-intro text-center fade-up delay-100">Looking to build something groundbreaking? Fill out the consultation request below, and I'll connect with you within 24 hours.</p>
 
             <div class="contact-grid">
-                <!-- Contact Info -->
                 <div class="fade-up delay-100">
                     <h3 style="margin-bottom: 2rem; font-size: 1.6rem;">Direct Lines</h3>
-                    
-                    <div style="margin-bottom: 2rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px;">
-                        <span style="display: block; font-weight: 700; color: var(--accent-primary); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Direct Inquiry</span>
-                        <a href="mailto:hello@kojostudio.com" style="font-size: 1.2rem; font-weight: 500;">hello@kojostudio.com</a>
-                    </div>
-                    
-                    <div style="margin-bottom: 2rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px;">
-                        <span style="display: block; font-weight: 700; color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Consultations</span>
-                        <a href="tel:+1234567890" style="font-size: 1.2rem; font-weight: 500;">+1 (234) 567-8900</a>
-                    </div>
-                    
-                    <div style="margin-bottom: 3rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px;">
-                        <span style="display: block; font-weight: 700; color: var(--accent-tertiary); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">HQ Location</span>
-                        <span style="font-size: 1.1rem;">Accra, Ghana<br><span style="color: var(--text-muted); font-size: 0.95rem;">Available Worldwide Remote</span></span>
+                    <span class="availability-pill">Typical response time: within 24 hours</span>
+
+                    <div class="contact-card">
+                        <span class="contact-card-label" style="color: var(--accent-primary);">Direct Inquiry</span>
+                        <a href="mailto:hello@kojostudio.com" class="contact-card-value">hello@kojostudio.com</a>
                     </div>
 
+                    <div class="contact-card">
+                        <span class="contact-card-label" style="color: var(--accent-secondary);">Consultations</span>
+                        <a href="tel:+1234567890" class="contact-card-value">+1 (234) 567-8900</a>
+                    </div>
 
+                    <div class="contact-card">
+                        <span class="contact-card-label" style="color: var(--accent-tertiary);">HQ Location</span>
+                        <span class="contact-card-value">Accra, Ghana<br><span style="color: var(--text-muted); font-size: 0.95rem;">Available Worldwide Remote</span></span>
+                    </div>
                 </div>
 
-                <!-- Form -->
                 <div class="form-container fade-up delay-200">
                     <h3 style="margin-bottom: 2rem; font-size: 1.6rem;">Project Overview</h3>
                     <form id="contactForm" novalidate>
-                        
                         <div class="form-row" style="margin-bottom: 1.5rem;">
                             <div class="form-group" style="margin: 0;">
                                 <label for="name">Legal Name *</label>
@@ -63,7 +59,7 @@
                             </div>
                             <div class="form-group" style="margin: 0;">
                                 <label for="email">Work Email *</label>
-                                <input type="email" id="email" class="form-control" placeholder="jane.doe@company.com">
+                                <input type="email" id="email" class="form-control" placeholder="[EMAIL_ADDRESS]">
                                 <span class="error-msg">Valid email is required.</span>
                             </div>
                         </div>
@@ -95,7 +91,6 @@
                         <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1.2rem;">Transmit Request</button>
                     </form>
                 </div>
-
             </div>
         </section>
     </main>
@@ -106,4 +101,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

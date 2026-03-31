@@ -2,12 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             const isActive = navLinks.classList.contains('active');
             navLinks.classList.toggle('active');
-            hamburger.innerHTML = isActive ? '☰' : '✕';
+            hamburger.textContent = isActive ? '\u2630' : '\u2715';
+            hamburger.setAttribute('aria-expanded', String(!isActive));
         });
     }
 
@@ -15,25 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const faders = document.querySelectorAll('.fade-up');
     const appearOptions = {
         threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+        rootMargin: '0px 0px -50px 0px'
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
-            } else {
-                entry.target.classList.add('appear');
-                
-                // Animate progress bars if present
-                const progressFills = entry.target.querySelectorAll('.progress-fill');
-                progressFills.forEach(bar => {
-                    const width = bar.getAttribute('data-width');
-                    bar.style.width = width;
-                });
-
-                observer.unobserve(entry.target);
             }
+
+            entry.target.classList.add('appear');
+
+            // Animate progress bars if present
+            const progressFills = entry.target.querySelectorAll('.progress-fill');
+            progressFills.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+            });
+
+            observer.unobserve(entry.target);
         });
     }, appearOptions);
 
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            
+
             card.style.setProperty('--mouse-x', `${x}px`);
             card.style.setProperty('--mouse-y', `${y}px`);
         });
@@ -65,13 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('active');
 
                 const filterValue = btn.getAttribute('data-filter');
-                
+
                 portfolioItems.forEach(item => {
                     if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
                         item.style.display = 'flex';
-                        // brief animation reset
                         item.classList.remove('appear');
-                        void item.offsetWidth; // trigger reflow
+                        void item.offsetWidth;
                         item.classList.add('appear');
                     } else {
                         item.style.display = 'none';
@@ -84,16 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form Validation (Contact Page)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', e => {
             e.preventDefault();
             let isValid = true;
-            
+
             const name = document.getElementById('name');
             const email = document.getElementById('email');
             const service = document.getElementById('service');
             const message = document.getElementById('message');
 
-            document.querySelectorAll('.error-msg').forEach(msg => msg.style.display = 'none');
+            document.querySelectorAll('.error-msg').forEach(msg => {
+                msg.style.display = 'none';
+            });
 
             if (name && name.value.trim() === '') {
                 name.nextElementSibling.style.display = 'block';
@@ -120,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const btn = contactForm.querySelector('button[type="submit"]');
                 const originalText = btn.textContent;
                 btn.textContent = 'Sending...';
-                
+
                 setTimeout(() => {
                     alert('Message sent successfully! We will get back to you soon.');
                     contactForm.reset();
